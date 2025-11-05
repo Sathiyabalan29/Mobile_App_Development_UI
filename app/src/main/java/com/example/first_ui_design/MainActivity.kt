@@ -45,7 +45,7 @@ fun NewsCardScreen() {
                 .fillMaxWidth()
                 .weight(1f)
         ) {
-            // Background image
+
             Image(
                 painter = painterResource(id = R.drawable.background_image),
                 contentDescription = "News Image",
@@ -53,20 +53,20 @@ fun NewsCardScreen() {
                 modifier = Modifier.fillMaxSize()
             )
 
-            // Black overlay for readability
+
             Box(
                 modifier = Modifier
                     .fillMaxSize()
                     .background(Color.Black.copy(alpha = 0.4f))
             )
 
-            // Overlay column: TECH button, title, author/read-time
+
             Column(
                 modifier = Modifier
                     .align(Alignment.BottomStart)
                     .padding(16.dp)
             ) {
-                // TECH button above the text
+
                 Button(
                     onClick = { /* TODO: handle click */ },
                     colors = ButtonDefaults.buttonColors(
@@ -88,7 +88,7 @@ fun NewsCardScreen() {
 
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // Title text with line spacing
+
                 Text(
                     text = "The Future of Urban Living",
                     color = Color.White,
@@ -99,7 +99,7 @@ fun NewsCardScreen() {
 
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // Author and read-time row
+
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Icon(
                         painter = painterResource(id = R.drawable.person),
@@ -124,7 +124,7 @@ fun NewsCardScreen() {
             }
         }
 
-        // Bottom black bar with buttons
+
         Row(
             modifier = Modifier
                 .fillMaxWidth()
